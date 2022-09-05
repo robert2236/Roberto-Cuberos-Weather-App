@@ -10,9 +10,10 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    navigator.geolocation.getCurrentPosition(success);
     setLoading(true);
     setTimeout(() => {
-      navigator.geolocation.getCurrentPosition(success);
+      
 
       function success(pos) {
         const crd = pos.coords;
