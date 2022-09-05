@@ -75,7 +75,7 @@ function App() {
           <h1>
             <b>
               <i className="fa-solid fa-wind"></i>
-              {climate.wind?.speed} m/s
+              {climate.wind?.speed} Km/h
             </b>
           </h1>
           <h1>
